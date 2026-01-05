@@ -14,7 +14,7 @@ Embedded wearable electronics system with analogue sensing, power management, an
 
 ### 🔹 Industrial Automation & SCADA Integration
 Design and integration of PLC-controlled distributing, testing, and sorting stations with SCADA-style supervision.  
-[View project →](projects/Industrial Automation & SCADA Integration)
+[View project →](projects/automation-scada.md)
 
 ### 🔹 Autonomous Line-Following Robot
 Analogue sensing, comparator-based logic, and PWM motor control for autonomous navigation.  
