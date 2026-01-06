@@ -59,7 +59,7 @@ Performance was comparable to consumer-grade wearables, with significantly impro
 ## 📷 Prototype & Architecture
 
 <p align="center">
-  <img src="../assets/ppg-wearable.jpg" alt="Wearable Prototype" width="400">
+  <img src="../assets/ppg-wearable.png" alt="Wearable Prototype" width="400">
 </p>
 ![Wearable Prototype](../assets/ppg-wearable.png)
 
