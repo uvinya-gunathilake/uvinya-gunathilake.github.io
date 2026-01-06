@@ -56,6 +56,16 @@ Performance was comparable to consumer-grade wearables, with significantly impro
 - Bland–Altman analysis, RMSE, bias metrics
 
 ---
+## 📷 Prototype & Architecture
+
+![Wearable Prototype](../assets/ppg-wearable.jpg)
+
+![System Architecture](../assets/ppg-architecture.png)
+
+## 📈 Validation Results
+
+![Bland–Altman Analysis](../assets/Validation-Plot-SpO2.png)
+![Bland–Altman Analysis](../assets/Validation-Plot-HR.png)
 
 ## 🚀 Future Improvements
 - MQTT over TLS for secure communication
