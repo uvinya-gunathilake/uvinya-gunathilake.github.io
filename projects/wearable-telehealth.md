@@ -72,11 +72,11 @@ Performance was comparable to consumer-grade wearables, with significantly impro
 
 **Heart Rate**
 <p align="center">
-  <img src="../assets/Validation-Plot-SpO2.png" alt="System Architecture" width="500">
+  <img src="../assets/Validation_Plot_HR.png" alt="Bland–Altman Analysis HR" width="500">
 </p>
 
-![Bland–Altman Analysis](../assets/Validation-Plot-SpO2.png)
-![Bland–Altman Analysis](../assets/Validation-Plot-HR.png)
+![Bland–Altman Analysis](../assets/Validation_Plot_SpO2.png)
+![Bland–Altman Analysis](../assets/Validation_Plot_HR.png)
 
 ## 🚀 Future Improvements
 - MQTT over TLS for secure communication
