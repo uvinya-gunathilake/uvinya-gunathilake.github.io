@@ -63,7 +63,7 @@ Performance was comparable to consumer-grade wearables, with significantly impro
 </p>
 
 <p align="center">
-  <img src="../ppg-architecture.png" alt="System Architecture" width="400">
+  <img src="../assets/ppg-architecture.png" alt="System Architecture" width="400">
 </p>
 ![System Architecture](../assets/ppg-architecture.png)
 
