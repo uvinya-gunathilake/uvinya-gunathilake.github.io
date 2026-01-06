@@ -12,9 +12,9 @@ My interests include electronic hardware design, system integration, testing, an
 Embedded wearable electronics system with analogue sensing, power management, and BLE/Wi-Fi communication.  
 [View project →](projects/wearable-telehealth.md)
 
-### 🔹 Industrial Automation & SCADA Integration
-Design and integration of PLC-controlled distributing, testing, and sorting stations with SCADA-style supervision.  
-[View project →](projects/automation-scada.md)
+### 🔹 Automated Crazy Machine (FSM-Controlled System)
+Multi-stage mechatronic system using Moore FSM, sensors, and actuators.  
+[View project →](projects/crazy-machine-fsm.md)
 
 ### 🔹 Industrial Automation & SCADA Integration
 Design and integration of PLC-controlled distributing, testing, and sorting stations with SCADA-style supervision.  
