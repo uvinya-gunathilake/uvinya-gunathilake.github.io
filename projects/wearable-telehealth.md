@@ -58,15 +58,22 @@ Performance was comparable to consumer-grade wearables, with significantly impro
 ---
 ## 📷 Prototype & Architecture
 
+**Prototype**
 <p align="center">
   <img src="../assets/ppg-wearable.png" alt="Wearable Prototype" width="400">
 </p>
 
+**Architecture**
 <p align="center">
   <img src="../assets/ppg-architecture.png" alt="System Architecture" width="500">
 </p>
 
 ## 📈 Validation Results
+
+**Heart Rate**
+<p align="center">
+  <img src="../assets/Validation-Plot-SpO2.png" alt="System Architecture" width="500">
+</p>
 
 ![Bland–Altman Analysis](../assets/Validation-Plot-SpO2.png)
 ![Bland–Altman Analysis](../assets/Validation-Plot-HR.png)
