@@ -75,8 +75,11 @@ Performance was comparable to consumer-grade wearables, with significantly impro
   <img src="../assets/Validation_Plot_HR.png" alt="Bland–Altman Analysis HR" width="500">
 </p>
 
-![Bland–Altman Analysis](../assets/Validation_Plot_SpO2.png)
-![Bland–Altman Analysis](../assets/Validation_Plot_HR.png)
+**SpO2**
+<p align="center">
+  <img src="../assets/Validation_Plot_SpO2.png" alt="Bland–Altman Analysis SpO2" width="500">
+</p>
+
 
 ## 🚀 Future Improvements
 - MQTT over TLS for secure communication
