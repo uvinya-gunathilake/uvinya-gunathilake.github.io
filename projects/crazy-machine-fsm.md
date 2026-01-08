@@ -82,14 +82,12 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 - **Actuator:** Servo motor  
 - **Function:** Aligns bridge horizontally and releases ball to exit  
 
-<img src="images/bridge_exit.jpg" width="400">
-
 ---
 
 ## 🔄 Control Architecture — FSM Design
 The entire machine is governed by a **Moore finite state machine**, where outputs depend only on the current state. This approach improves predictability, avoids race conditions, and simplifies debugging.
 
-<img src="images/fsm_diagram.png" width="600">
+<img src="../assets/FSM.jpg" width="600">
 
 ### State Sequence Summary
 - **Reset (I):** All mechanisms return to default positions  
