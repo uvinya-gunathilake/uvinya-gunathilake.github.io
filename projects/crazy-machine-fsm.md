@@ -25,6 +25,7 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 <p align="center">
   <img src="../assets/Full.jpg" width="600">
 </p>
+
 ---
 
 ## 🛠️ Mechanical & Electrical Subsystems
