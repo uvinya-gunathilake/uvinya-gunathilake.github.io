@@ -47,6 +47,7 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 **Maze**
 
 <img src="../assets/Maze.jpg" width="400">
+
 ---
 
 ### Ferris Wheel Lift
