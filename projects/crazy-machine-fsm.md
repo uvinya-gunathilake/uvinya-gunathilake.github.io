@@ -88,7 +88,7 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 The entire machine is governed by a **Moore finite state machine**, where outputs depend only on the current state. This approach improves predictability, avoids race conditions, and simplifies debugging.
 
 <p align="center">
-  <img src="../assets/FSM.jpg" width="600" alt="System Architecture" width="500">
+  <img src="../assets/FSM.jpg" width="700">
 </p>
 
 
