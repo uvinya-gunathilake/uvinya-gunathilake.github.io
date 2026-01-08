@@ -33,7 +33,6 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 - **Component:** Entrance slide  
 - **Sensor:** LDR  
 - **Function:** Detects ball entry and triggers system start  
-
 ---
 
 ### Merry-Go-Round & Maze
