@@ -39,10 +39,15 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 ### Merry-Go-Round & Maze
 - **Actuator:** Stepper motor  
 - **Sensor:** FSR at maze exit  
-- **Function:** Transfers the ball into and through the maze  
+- **Function:** Transfers the ball into and through the maze
+
+**Merry-Go-Round**
 
 <img src="../assets/Mgr.jpg" width="400">
 
+**Maze**
+
+<img src="../assets/Maze.jpg" width="400">
 ---
 
 ### Ferris Wheel Lift
@@ -50,7 +55,7 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 - **Sensor:** FSR  
 - **Function:** Lifts the ball vertically to the upper level  
 
-<img src="images/ferris_wheel.jpg" width="400">
+<img src="../assets/Ferris Wheel.jpg" width="400">
 
 ---
 
@@ -58,7 +63,7 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 - **Actuator:** Linear servo  
 - **Function:** Pushes the ball onto the upper slide  
 
-<img src="images/piston.jpg" width="400">
+<img src="../assets/Mechanical Arm.jpg" width="400">
 
 ---
 
@@ -69,7 +74,7 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 - **Sensor:** Line sensor  
 - **Function:** Captures and lifts the ball vertically  
 
-<img src="images/elevator_magnet.jpg" width="400">
+<img src="../assets/Elevator.jpg" width="400">
 
 ---
 
