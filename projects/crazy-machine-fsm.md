@@ -43,7 +43,7 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 - **Sensor:** FSR at maze exit  
 - **Function:** Transfers the ball into and through the maze  
 
-<img src="images/maze_mgr.jpg" width="400">
+<img src="../assets/ppg-architecture.jpg" width="400">
 
 ---
 
