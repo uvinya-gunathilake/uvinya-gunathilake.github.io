@@ -22,9 +22,9 @@ The system was engineered as a **Moore-model FSM**, ensuring deterministic, repe
 
 ## 🏗️ Overall System Architecture
 The machine is composed of multiple mechanically and electrically actuated subsystems. Each subsystem is activated only when the **correct sensor condition** is met, as dictated by the FSM.
-
-<img src="images/full_machine.jpg" width="600">
-
+<p align="center">
+  <img src="../assets/Full.jpg" width="600">
+</p>
 ---
 
 ## 🛠️ Mechanical & Electrical Subsystems
@@ -157,4 +157,4 @@ The entire machine is governed by a **Moore finite state machine**, where output
 
 ## 🎥 Full System Demonstration
 **Project Demonstration Video:**  
-[Watch the full system in operation](PASTE_VIDEO_LINK_HERE)
+[Watch the full system in operation](https://youtu.be/NUxc518ZqCk)
