@@ -34,8 +34,6 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 - **Sensor:** LDR  
 - **Function:** Detects ball entry and triggers system start  
 
-<img src="images/entrance_sensor.jpg" width="400">
-
 ---
 
 ### Merry-Go-Round & Maze
@@ -43,7 +41,7 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 - **Sensor:** FSR at maze exit  
 - **Function:** Transfers the ball into and through the maze  
 
-<img src="../assets/ppg-architecture.jpg" width="400">
+<img src="../assets/Mgr.jpg" width="400">
 
 ---
 
