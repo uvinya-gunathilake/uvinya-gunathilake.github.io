@@ -74,7 +74,7 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 - **Sensor:** Line sensor  
 - **Function:** Captures and lifts the ball vertically  
 
-<img src="../assets/Elevator.jpg" width="400">
+<img src="../assets/Elevator.jpg" width="600">
 
 ---
 
