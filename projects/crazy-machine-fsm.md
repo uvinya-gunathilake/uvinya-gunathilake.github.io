@@ -87,7 +87,10 @@ The machine is composed of multiple mechanically and electrically actuated subsy
 ## 🔄 Control Architecture — FSM Design
 The entire machine is governed by a **Moore finite state machine**, where outputs depend only on the current state. This approach improves predictability, avoids race conditions, and simplifies debugging.
 
-<img src="../assets/FSM.jpg" width="600">
+<p align="center">
+  <img src="../assets/FSM.jpg" width="600" alt="System Architecture" width="500">
+</p>
+
 
 ### State Sequence Summary
 - **Reset (I):** All mechanisms return to default positions  
