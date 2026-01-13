@@ -6,93 +6,142 @@ Curtin University — Mechatronics Design Project (MXEN3000)
 ---
 
 ## 🧠 Project Overview
-Designed and built an **autonomous line-following robot** capable of accurately tracking a predefined path using **optical sensing** and a **Proportional–Integral (PI) control algorithm**.
+This project involved the design, construction, and control of an **autonomous line-following robot** capable of accurately tracking a predefined path using **optical sensors and a Proportional–Integral (PI) control algorithm**.
 
-The project focused on **robust mechanical design**, **sensor reliability**, and **control-system tuning**, integrating hardware and software into a stable, responsive robotic system.
-
----
-
-## 🎯 System Objectives
-- Accurately follow a black-and-white track using optical sensors  
-- Maintain stability during sharp turns and speed changes  
-- Minimize oscillations and overcorrection  
-- Enable real-time monitoring and tuning through a custom GUI  
+The robot integrates **mechanical design**, **sensor systems**, **analog and digital electronics**, **embedded programming**, and **GUI-based monitoring** to achieve smooth, stable, and reliable line-following performance.
 
 ---
 
-## 🏗️ Vehicle Architecture Overview
-The robot is a compact, maneuverable platform built for precision control and stability.
+## 📸 Final Vehicle
+<img src="images/final_vehicle.jpg" width="650">
 
-<img src="images/full_robot.jpg" width="600">
-
-### Key Structural Features
-- **Wide chassis** for improved stability  
-- **Low center of gravity** achieved by mounting components 6 mm above the base  
-- **Caterpillar tracks** for high traction and sharp directional changes  
-- **Lightweight construction** to reduce power consumption  
+The robot is a compact, maneuverable platform designed to follow a white track surrounded by black regions with high precision.
 
 ---
 
-## 🛠️ Mechanical & Electrical Design
+## 🏗️ Vehicle Design Overview
 
-### Optical Sensing System
-- **Sensors:** Dual opto-sensors (IR emitter + LDR)
-- **Mounting height:** ~8 mm above surface
-- **Spacing:** 3.5 cm between sensors
-- **Function:** Distinguish white (on-track) vs black (off-track)
+### Textual Description
+The robot uses a **tracked locomotion system** consisting of two wide plastic caterpillar tracks mounted on wheels, providing excellent traction and stability across varying surfaces. Two opto-sensors are mounted at the front of the vehicle to detect contrast between the track and surrounding surface.
 
-<img src="images/sensors.jpg" width="400">
+Sensor outputs are processed through:
+- A **GUI-based control system**
+- An **Arduino Nano**
+- An onboard **analog control PCB**
 
-This configuration provided reliable binary readings while minimizing ambient light interference.
+This chain controls motor speed and direction to maintain accurate path tracking.
 
----
+The motors (0.09 kg each) are rear-mounted to avoid mechanical interference and are directly coupled to the wheels for efficient torque transmission. A custom PCB mounted on top houses:
+- 555 timers  
+- DACs  
+- Operational amplifiers  
+- Comparators  
 
-### Drive System
-- **Motors:** Two DC motors (0.09 kg each)
-- **Coupling:** Direct 1:1 coupling (no gearbox)
-- **Drive:** Caterpillar tracks for enhanced grip and maneuverability
-
-<img src="images/drive_system.jpg" width="400">
-
-Motors were rear-mounted to avoid interference and ensure balanced weight distribution.
+Power is supplied by a **3-cell Li-ion battery (11.1 V)** housed at the rear.
 
 ---
 
-### Power & Electronics
-- **Battery:** 3 × 3.7 V Li-ion cells (11.1 V total)
-- **Main PCB includes:**
-  - 555 timers
-  - DACs
-  - Operational amplifiers
-  - Comparators
-- **Controller:** Arduino Nano
-
-<img src="images/pcb.jpg" width="400">
-
-All components were selected to ensure **TTL compatibility (5 V logic)**, enabling reliable sensor–controller communication without additional voltage conversion.
+## 📐 Physical Design Considerations
+- Lightweight materials minimize power consumption
+- Low center of gravity achieved by mounting PCB components as low as **6 mm**
+- Sensors mounted **8 mm above ground** for optimal IR reflection
+- Sensor spacing of **3.5 cm** ensures accurate detection
+- Wide chassis improves stability and reduces wobble
+- Caterpillar tracks allow sharp turns without loss of grip
 
 ---
 
-## 🔄 Control System Design
-
-### Control Strategy Selection
-Three control strategies were evaluated:
-
-| Controller | Outcome |
-|----------|--------|
-| Bang-Bang | Simple but caused jitter, oscillations, and oversteering |
-| PID | High performance but too complex to tune within project scope |
-| **PI (Chosen)** | Best balance between smooth control and simplicity |
-
-The **PI controller** provided stable tracking while reducing oscillations and overshoot.
+## ⚙️ System Architecture & Functional Parameters
+Key design parameters considered:
+- Surface contrast sensitivity (black vs white)
+- Motor speed (RPM), torque (N·m), and weight
+- PWM-based motor control
+- Battery voltage, current draw, and runtime
+- Sensor response latency
+- Path deviation and correction time
+- Maximum vehicle weight
 
 ---
 
-## 📐 PI Control Algorithm
+## 🛠️ Key Technical Challenges & Solutions
+
+### Hardware Challenges
+| Challenge | Solution |
+|--------|---------|
+Sensor spacing issues | Reduced gap and recalibrated height for accurate detection |
+Loose electronic connections | Secured components to prevent signal loss |
+Unstable chassis during turns | Lowered center of gravity and used lightweight materials |
+
+### Electronics Challenges
+| Challenge | Solution |
+|--------|---------|
+Signal noise and interference | Implemented push-pull signal conditioning |
+Arduino–PCB communication failure | Rewritten serial communication code |
+Bang-bang control instability | Replaced with PI controller |
+
+### Software Challenges
+| Challenge | Solution |
+|--------|---------|
+PI controller implementation | Learned error tracking using queues |
+Controller tuning | Iterative testing and parameter adjustment |
+
+---
+
+## 🎯 Anticipated Vehicle Performance
+- Smooth traversal of curved tracks
+- Accurate on-track/off-track detection
+- Sharp turns with minimal deviation
+- Minor performance variations due to friction and environment
+- Improved robustness through tuning
+
+---
+
+## 📊 Key Performance Indicators (KPIs)
+
+| KPI | Metric |
+|----|------|
+Speed | m/s, total track completion time |
+Tracking accuracy | Path deviation (cm) |
+Response speed | Correction latency (ms) |
+Turning precision | Angular error (degrees) |
+Motor control | PWM accuracy (%) |
+Sensor sensitivity | Binary accuracy (%) |
+Data transmission | GUI response time (ms) |
+
+---
+
+## 🧩 Key Design Decisions
+
+### Control System Selection
+- Bang-bang: simple but unstable
+- PID: powerful but complex
+- **PI controller chosen** for balance between stability and simplicity
+
+### Sensor Placement
+- Mounted 8 mm above ground
+- Spaced 3.5 cm apart
+- Ensures reliable binary detection
+
+### GUI Design
+- Real-time sensor and motor monitoring
+- Simplifies tuning and debugging
+
+### TTL Compatibility
+- Sensors and Arduino Nano operate at 5 V logic
+- No voltage conversion required
+- Reliable digital interfacing
+
+### Motor & Drive Configuration
+- Direct 1:1 motor-to-wheel coupling
+- Caterpillar tracks for traction
+- Optimized wheelbase width
+
+---
+
+## 🔄 Control Algorithm (PI Controller)
 
 ### Sensor Interpretation
-- Sensor value < 240 → **White (on-track)** → `1`
-- Sensor value ≥ 240 → **Black (off-track)** → `0`
+- Sensor value > 240 → Black (off-track) → 0
+- Sensor value < 240 → White (on-track) → 1
 
 ### Error Calculation
-
