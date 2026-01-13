@@ -152,9 +152,9 @@ Error = Right Sensor − Left Sensor
 - Error = −1 → Drift right
 
 ### PI Control
-P = Kp × Current Error
-I = Ki × Σ(Past Errors)
-Response = P + I
+P = Kp × Current Error |
+I = Ki × Σ(Past Errors) |
+Response = P + I |
 
 
 The last **10 error values** are stored to smooth control actions.
