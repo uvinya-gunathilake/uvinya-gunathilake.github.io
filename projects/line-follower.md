@@ -13,7 +13,7 @@ The robot integrates **mechanical design**, **sensor systems**, **analog and dig
 ---
 
 ## 📸 Final Vehicle
-<img src="images/final_vehicle.jpg" width="650">
+<img src="../assets/ppg-architecture.png"  width="500">
 
 The robot is a compact, maneuverable platform designed to follow a white track surrounded by black regions with high precision.
 
