@@ -145,3 +145,89 @@ Data transmission | GUI response time (ms) |
 - Sensor value < 240 → White (on-track) → 1
 
 ### Error Calculation
+Error = Right Sensor − Left Sensor
+
+- Error = 0 → On track
+- Error = +1 → Drift left
+- Error = −1 → Drift right
+
+### PI Control
+P = Kp × Current Error
+I = Ki × Σ(Past Errors)
+Response = P + I
+
+
+The last **10 error values** are stored to smooth control actions.
+
+### Motor Control Logic
+- Positive response → right turn
+- Negative response → left turn
+- PWM duty cycles adjusted independently
+
+---
+
+## 🔌 Communication Protocol
+
+### Serial Data Packet (5 Bytes)
+| Byte | Description |
+|----|------------|
+Byte 0 | Start byte (255) |
+Byte 1 | Command byte |
+Byte 2 | Sensor / Motor data |
+Byte 3 | Sensor / Motor data |
+Byte 4 | Checksum |
+
+Checksum ensures packet integrity.
+
+---
+
+## 🖥️ GUI Features
+- Start/Stop control
+- Real-time sensor readings
+- PWM duty cycle display
+- Error notifications
+- Color-coded sensor panels
+- Graphical motor speed indicators
+- Visual cart position tracking
+
+---
+
+## ❌ Mistakes & Fixes
+
+### ADC Resolution Error
+- Arduino ADC is 10-bit
+- Initial readings unstable
+- Fixed by scaling to 8-bit (`value / 4`)
+
+### Serial Communication Failure
+- GUI commands not reaching PCB
+- Rewritten serial handling code
+- Fully restored communication
+
+---
+
+## 📈 Results Summary
+
+| Aspect | Outcome |
+|----|--------|
+Sensor stability | Improved after calibration |
+Motor balance | Minor imbalance at sharp turns |
+Tracking accuracy | < 50 mm deviation |
+PWM accuracy | ±5% |
+Overall performance | Stable, reliable line following |
+
+---
+
+## 📚 Lessons Learned
+- Optical sensing depends heavily on calibration
+- Ambient light introduces noise
+- Bang-bang control causes oscillations
+- PI control offers smooth, stable tracking
+- PID provides better performance but requires complex tuning
+- Trade-offs between simplicity, precision, and stability are critical in control design
+
+---
+
+## 🚀 Conclusion
+This project demonstrates a complete **mechatronics system**, integrating sensing, actuation, control algorithms, electronics, and software. The PI-controlled line-following robot achieved reliable performance while highlighting the importance of calibration, controller selection, and system-level design thinking.
+
