@@ -116,11 +116,3 @@ This reinforced my awareness of **cybersecurity considerations in industrial aut
 - **Documentation & Testing:** Debugging, validation, reporting  
 
 ---
-
-## Media
-
-### System Images
-```text
-![Station Overview](images/station_overview.jpg)
-![Ladder Logic Example](images/ladder_logic.jpg)
-![SCADA Interface](images/scada_interface.jpg)
