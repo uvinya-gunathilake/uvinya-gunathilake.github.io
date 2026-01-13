@@ -13,7 +13,7 @@ The robot integrates **mechanical design**, **sensor systems**, **analog and dig
 ---
 
 ## 📸 Final Vehicle
-<img src="../assets/Line Following.png"  width="800">
+<img src="../assets/Line Following.png"  width="1000">
 
 The robot is a compact, maneuverable platform designed to follow a white track surrounded by black regions with high precision.
 
