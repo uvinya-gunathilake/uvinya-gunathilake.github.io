@@ -1,144 +1,119 @@
 # PLC & SCADA-Based Automation of FESTO Stations
 
+**Industrial Automation · PLC Programming · SCADA · OOAD · Ladder Logic**  
+Curtin University — Mechatronics Engineering (Group Project)
+
+---
+
 ## Project Overview
-This project focuses on the design and implementation of an **integrated industrial automation system** for three FESTO stations: **Distributing, Testing, and Sorting**. The system was developed using **PLC programming** and supervised through a **SCADA interface**, with a strong emphasis on **Object-Oriented Analysis and Design (OOAD)**, modular control logic, and real-time monitoring.
+This project involved the design and implementation of an **integrated industrial automation system** for three FESTO stations: **Distributing, Testing, and Sorting**. The system was controlled using **PLC ladder logic** and supervised through a **SCADA interface**, with a strong emphasis on **Object-Oriented Analysis and Design (OOAD)**, modular programming, and real-time monitoring.
+
+---
+
+## My Role & Responsibilities
+I was primarily responsible for the **control logic design, system modelling, and debugging** of the FESTO stations. My work focused on translating system requirements into structured control logic and ensuring reliable interaction between sensors, actuators, PLC logic, and the SCADA interface.
+
+### My Key Contributions
+- Modelled station behavior using **Object-Oriented Analysis and finite state diagrams**
+- Designed and implemented **PLC ladder logic** for multiple station processes
+- Developed **modular function blocks** to enable code reuse and scalability
+- Integrated sensor inputs and actuator outputs into the PLC program
+- Debugged timing issues, logic conflicts, and sensor-state mismatches
+- Assisted with **SCADA variable mapping** and operational testing
+- Documented system behavior, logic flow, and troubleshooting procedures
 
 ---
 
 ## Object-Oriented Analysis & Design (OOAD)
 
-Object-Oriented Analysis and Design (OOAD) was applied to model the automation system by representing each station as a collection of interacting objects with defined states and behaviors. **Finite State Diagrams** were used to model the lifecycle of key components, ensuring predictable and reliable system behavior.
+OOAD was used to model each FESTO station as a collection of interacting objects with defined states and behaviors. **Finite State Diagrams** were developed to represent the lifecycle of station components, ensuring predictable state transitions and structured logic design.
 
-### Key Benefits of OOAD in This Project
-- **Real-World Modelling:**  
-  Each FESTO station was modeled to closely reflect real industrial processes, accurately capturing interactions between sensors, actuators, and control logic.
-
-- **Improved Modularity:**  
-  The system was divided into reusable and manageable components, improving scalability, clarity, and long-term maintainability.
-
-- **Reduced Maintenance Costs:**  
-  Encapsulation enabled system updates and enhancements without extensive modifications, increasing system lifespan and reducing maintenance effort.
-
-- **Code Reusability:**  
-  Inheritance and reusable objects minimized redundant code and ensured consistency across stations.
-
-- **Better Abstraction:**  
-  Complex control interactions were represented at a higher level, simplifying troubleshooting and system understanding.
-
-- **Improved Reliability and Flexibility:**  
-  Existing objects could be extended or modified dynamically without disrupting the overall system.
-
-- **Enhanced Team Communication:**  
-  OOAD provided a common design framework that improved collaboration during PLC, sensor, actuator, and SCADA integration.
+### Why OOAD Was Effective
+- Enabled accurate **real-world modelling** of distributing, testing, and sorting processes
+- Improved **modularity**, making individual stations easier to update and maintain
+- Reduced long-term maintenance effort through encapsulation and abstraction
+- Supported clear communication within the team using a shared design framework
 
 ---
 
-## Code Reuse Through Function Blocks
+## Code Reuse Using Function Blocks
 
-The project made extensive use of **Function Blocks**, which are reusable software components encapsulating specific control tasks.
+To improve scalability and maintainability, I implemented control logic using **function blocks**.
 
-### Key Characteristics
-- **Encapsulation:**  
-  Internal logic is hidden, exposing only required inputs and outputs, protecting data integrity.
+### What I Did
+- Designed reusable function blocks for repeated station operations
+- Defined clear interfaces with well-structured inputs and outputs
+- Encapsulated internal logic to prevent unintended interference
+- Tested function blocks independently before integration
 
-- **Modularity:**  
-  Complex systems were broken into smaller, manageable blocks dedicated to specific operations.
-
-- **Defined Interfaces:**  
-  Each function block included clearly defined inputs and outputs, allowing seamless integration into larger programs.
-
-- **Independent Operation:**  
-  Function blocks could be developed, tested, and maintained independently.
-
-### Benefits Achieved
+### Outcome
 - Faster development time  
-- Improved code reliability  
-- Easier maintenance and debugging  
-- Consistent behavior across stations  
+- Cleaner and more readable ladder logic  
+- Improved reliability due to reuse of tested logic  
 
 ---
 
-## Ladder Logic Development
+## PLC Ladder Logic Development
 
 ### Major Achievement
-A key achievement in this project was the effective use of **Ladder Logic Diagrams (LAD)** to improve diagnostics and troubleshooting.
+One of my major contributions was improving **diagnostics and debugging efficiency** through well-structured ladder logic. The visual nature of ladder diagrams made it easier to trace data bit states and verify correct operation of sensors and actuators.
 
-The visual nature of ladder logic, similar to hard-wired electrical diagrams, made it easier to:
-- monitor real-time input and output states  
-- identify incorrect data bits  
-- validate sensor and actuator behavior  
+### How I Approached It
+- Broke control logic into logical, sequential rungs
+- Incrementally tested individual rungs and subsystems
+- Verified sensor inputs and actuator outputs against intended station behavior
+- Used descriptive naming conventions for clarity
 
-Incremental testing of ladder rungs allowed early detection and correction of logic errors, significantly improving system reliability and maintainability.
-
-### Best Practices Applied
-- Clear understanding of system requirements  
-- Regular testing and validation  
-- Logical breakdown of control sequences  
-- Descriptive naming conventions  
-- Reuse of tested logic modules  
+This approach significantly improved system reliability and reduced troubleshooting time.
 
 ---
 
-## Ladder Logic Challenges
+## Challenges & Lessons Learned (Ladder Logic)
 
-As the project evolved, the ladder diagrams increased in size and complexity, making them harder to interpret and modify.
+### Identified Challenge
+As station logic became more complex, ladder diagrams grew large and difficult to interpret, especially when multiple team members contributed to the same codebase.
 
-### Identified Issues
-- Reduced readability  
-- Difficulty understanding interconnections  
-- Increased debugging time  
+### How I Addressed It
+- Modularized ladder logic into smaller functional sections
+- Added detailed comments explaining logic intent
+- Participated in team reviews to align logic structure
+- Maintained consistency in naming and layout
 
-### Mitigation Strategies
-- Modularizing ladder logic  
-- Detailed comments and documentation  
-- Maintaining change logs  
-- Regular team code reviews  
-
-These strategies improved clarity, collaboration, and long-term maintainability.
+This experience highlighted the importance of **code readability and documentation** in industrial automation.
 
 ---
 
-## SCADA System Development
+## SCADA System Integration
 
-### Major Achievement
-A major achievement was the implementation of a **SCADA system** that enabled real-time monitoring and remote control of all three stations through an intuitive graphical user interface.
+### My Involvement
+- Assisted in mapping PLC variables to SCADA tags
+- Helped test real-time monitoring of sensors and actuators
+- Validated start, stop, reset, and fault-handling functions
+- Supported system-level testing across all three stations
 
-### SCADA Capabilities
-- Real-time visualization of sensor and actuator states  
-- Error detection and system status monitoring  
-- Remote start, stop, pause, reset, and resume operations  
-- Seamless communication between all stations  
-
-This eliminated the need for physical presence and significantly improved operational efficiency.
+### Key Achievement
+The SCADA interface enabled **remote monitoring and control** of the entire system through a graphical dashboard, improving operational efficiency and ease of use.
 
 ---
 
 ## SCADA Security Considerations
+During development, I identified that SCADA communication protocols can be vulnerable due to weak authentication and encryption.
 
-A major limitation identified was the inherent **security vulnerability of SCADA communication protocols**, including weak authentication and encryption mechanisms.
+### Key Takeaways
+- Importance of secure communication protocols
+- Need for strong authentication and access control
+- Value of continuous monitoring and security updates
 
-### Recommended Improvements
-- Strong authentication methods  
-- Encrypted communication protocols  
-- Packet validation mechanisms  
-- Continuous monitoring and regular security updates  
-- Penetration testing and vulnerability assessments  
-
-Addressing these concerns is essential for real-world industrial deployment.
+This reinforced my awareness of **cybersecurity considerations in industrial automation**.
 
 ---
 
-## Conclusion
-
-This project demonstrates the successful **integration of PLC control and SCADA supervision** for a multi-station industrial automation system. By applying OOAD principles, reusable function blocks, structured ladder logic, and real-time SCADA monitoring, the system achieved high reliability, flexibility, and maintainability.
-
-The project highlights:
-- Strong system-level engineering thinking  
-- Practical industrial automation skills  
-- Effective documentation and troubleshooting strategies  
-- Awareness of cybersecurity challenges in SCADA systems  
-
-This work provides a solid foundation for advanced roles in **mechatronics, control systems, and industrial automation engineering**.
+## Technologies & Tools
+- **PLC Programming:** Ladder Logic  
+- **Design Methodology:** OOAD, Finite State Diagrams  
+- **SCADA:** Real-time monitoring and control  
+- **Automation Hardware:** Sensors, actuators, motors  
+- **Documentation & Testing:** Debugging, validation, reporting  
 
 ---
 
@@ -146,5 +121,6 @@ This work provides a solid foundation for advanced roles in **mechatronics, cont
 
 ### System Images
 ```text
-Add images here using:
-![Description](images/image_name.jpg)
+![Station Overview](images/station_overview.jpg)
+![Ladder Logic Example](images/ladder_logic.jpg)
+![SCADA Interface](images/scada_interface.jpg)
